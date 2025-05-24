@@ -22,3 +22,7 @@ h1 {
 h2 {
   @apply text-2xl tracking-tight scroll-m-20 lg:text-3xl;
 }
+
+p {
+  @apply text-lg py-3;
+}
