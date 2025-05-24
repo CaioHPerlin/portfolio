@@ -1,6 +1,6 @@
 import GradientBox from "../components/gradient-box";
 
-export default function Bio() {
+export default function BioPage() {
   return (
     <div
       className="flex flex-col w-[45rem] gap-16
