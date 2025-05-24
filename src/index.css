@@ -4,12 +4,15 @@
 @theme {
   --font-sans: "Ubuntu", sans-serif;
 
-  --color-text: #fff;
   --color-background: #0b001c;
+
+  --color-primary: #80ed99;
+  --color-secondary: #22577a;
+  --color-accent: #e6f1f5;
 }
 
 body {
-  @apply bg-background text-text;
+  @apply bg-background text-accent;
 }
 
 h1 {
