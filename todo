@@ -1,12 +1,15 @@
 DONE
 
-TODO
-
-- Bio Page
+- Bio Page (kinda done)
 - Page Routing (react-router)
 - Header (simple, just different page Link buttons)
-- Projects Page (this may be included on that page)
+
+TODO
+
+- Projects Page (will be separate for sure)
 - Contact Page
 - Animations
 - Replace lorem ipsum with actual content
+- Add hard skills (include little banners for each technology)
+- Add soft skills
 - Support for both English and Portuguese
