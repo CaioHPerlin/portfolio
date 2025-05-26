@@ -1,3 +1,10 @@
+import PageHeading from "../components/page-heading";
+
 export default function ContactPage() {
-  return <div>hi from contact page</div>;
+  return (
+    <PageHeading
+      title={"Get in Touch"}
+      subtitle={"Ideas Start with a Conversation"}
+    />
+  );
 }
