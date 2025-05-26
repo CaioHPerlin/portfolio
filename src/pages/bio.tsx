@@ -2,12 +2,8 @@ import GradientBox from "../components/gradient-box";
 
 export default function BioPage() {
   return (
-    <div
-      className="flex flex-col w-[45rem] gap-16
-     mx-auto text-center py-[15vh]"
-    >
+    <div className="flex flex-col gap-16 text-center">
       <div className="space-y-4">
-        <img src="" alt="" />
         <h1>Caio Hygino Perlin de Lima</h1>
         <h2>Full-Stack Developer</h2>
       </div>
