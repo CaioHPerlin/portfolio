@@ -1,6 +1,6 @@
 import PageHeading from "../components/page-heading";
 
-export default function BioPage() {
+export default function MyselfPage() {
   return (
     <div className="">
       <PageHeading
