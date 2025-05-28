@@ -1,6 +1,7 @@
 import { useScroll, motion, useTransform } from "motion/react";
 import PageHeading from "../components/page-heading";
 import { useRef } from "react";
+import ParallaxSeparator from "../components/parallax-separator";
 
 export default function MyselfPage() {
   const heroRef = useRef(null);
@@ -16,39 +17,44 @@ export default function MyselfPage() {
       {/* hero */}
       <div
         ref={heroRef}
-        className={`
+        className="
           select-none
-          flex justify-center items-center w-full h-[100vh]
-          border-1 border-accent/20 
+          flex flex-col w-full h-[100vh]
+          border-1 border-accent/30 
           bg-gradient-to-br from-background via-secondary to-primary
           bg-size-[400%_400%]
           animate-bg-pan
-        `}
+          relative
+          overflow-hidden
+        "
       >
+        {/* Text content aligned to top */}
         <motion.div
           style={{ y: heroTextParallax }}
-          className="w-[80vw] h-[40vh]"
+          className="w-[75vw] mx-auto pt-[20vh]"
         >
-          <h1 className="text-[7rem]! leading-32 font-semibold">
+          <h1 className="text-[5rem]! 2xl:text-[7rem]! leading-24 2xl:leading-32 font-semibold">
             Caio Hygino
             <br />
             Full Stack Developer
           </h1>
           <p className="py-0! text-2xl!">
             this portfolio is still a{" "}
-            <em className="not-italic text-transparent font-bold bg-gradient-to-r from-violet-200 to-pink-200 bg-clip-text ">
+            <em className="not-italic text-transparent font-bold bg-gradient-to-r from-violet-200 to-pink-200 bg-clip-text">
               work in progress!
             </em>
           </p>
         </motion.div>
+
+        {/* Parallax separator aligned to bottom */}
+        <div className="w-full mt-auto">
+          <ParallaxSeparator scrollYProgress={scrollYProgress} />
+        </div>
       </div>
 
       {/* content */}
-      <div className="w-[45rem] mx-auto mt-20 py-10">
-        <PageHeading
-          title="Caio Hygino Perlin de Lima"
-          subtitle="Full-Stack Developer"
-        />
+      <div className="w-[45rem] mx-auto pt-20 pb-10">
+        <PageHeading title="Myself" subtitle="Full-Stack Developer" />
         <main className="text-left space-y-8">
           <section>
             <h1>Myself</h1>
