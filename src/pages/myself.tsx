@@ -2,68 +2,97 @@ import PageHeading from "../components/page-heading";
 
 export default function MyselfPage() {
   return (
-    <div className="">
-      <PageHeading
-        title="Caio Hygino Perlin de Lima"
-        subtitle="Full-Stack Developer"
-      />
-      <main className="text-left space-y-8">
-        <section>
-          <h1>Myself</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            mollitia aperiam aliquam consectetur explicabo odio praesentium ipsa
-            sunt eaque deserunt repellendus assumenda molestiae, enim id
-            dignissimos aut minus expedita soluta.
+    <>
+      {/* hero */}
+      <div
+        className={`
+          select-none
+          flex justify-center items-center w-full h-[100vh]
+          border-1 border-accent/20 
+          bg-gradient-to-br from-background via-secondary to-primary
+          bg-size-[400%_400%]
+          animate-bg-pan
+        `}
+      >
+        <div className="w-[80vw] h-[40vh]">
+          <h1 className="text-[7rem]! leading-32 font-semibold">
+            Caio Hygino
+            <br />
+            Full Stack Developer
+          </h1>
+          <p className="py-0! text-2xl!">
+            this portfolio is still a{" "}
+            <em className="not-italic text-transparent font-bold bg-gradient-to-r from-violet-200 to-pink-200 bg-clip-text ">
+              work in progress!
+            </em>
           </p>
-        </section>
-        <section>
-          <h1>Professional Experience</h1>
-          <ul className="flex flex-col pt-6 gap-4">
-            <li>
-              <div className="flex flex-row justify-between">
-                <h1 className="text-2xl!">Example</h1>
-                <span>00/0000 — 00/0000</span>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Accusantium, nisi! Dolorem ea ab quisquam aut vel, asperiores at
-                voluptas tempore quam suscipit officia repudiandae natus ipsam
-                nulla itaque odit minima!
-              </p>
-            </li>
-            <li>
-              <div className="flex flex-row justify-between">
-                <h1 className="text-2xl!">Example</h1>
-                <span>00/0000 — 00/0000</span>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Accusantium, nisi! Dolorem ea ab quisquam aut vel, asperiores at
-                voluptas tempore quam suscipit officia repudiandae natus ipsam
-                nulla itaque odit minima!
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h1>Education</h1>
-          <ul className="flex flex-col pt-6 gap-4">
-            <li>
-              <div className="flex flex-row justify-between">
-                <h1 className="text-2xl!">Example</h1>
-                <span>00/0000 — 00/0000</span>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Accusantium, nisi! Dolorem ea ab quisquam aut vel, asperiores at
-                voluptas tempore quam suscipit officia repudiandae natus ipsam
-                nulla itaque odit minima!
-              </p>
-            </li>
-          </ul>
-        </section>
-      </main>
-    </div>
+        </div>
+      </div>
+
+      {/* content */}
+      <div className="w-[45rem] mx-auto mt-20 py-10">
+        <PageHeading
+          title="Caio Hygino Perlin de Lima"
+          subtitle="Full-Stack Developer"
+        />
+        <main className="text-left space-y-8">
+          <section>
+            <h1>Myself</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              mollitia aperiam aliquam consectetur explicabo odio praesentium
+              ipsa sunt eaque deserunt repellendus assumenda molestiae, enim id
+              dignissimos aut minus expedita soluta.
+            </p>
+          </section>
+          <section>
+            <h1>Professional Experience</h1>
+            <ul className="flex flex-col pt-6 gap-4">
+              <li>
+                <div className="flex flex-row justify-between">
+                  <h1 className="text-2xl!">Example</h1>
+                  <span>00/0000 — 00/0000</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Accusantium, nisi! Dolorem ea ab quisquam aut vel, asperiores
+                  at voluptas tempore quam suscipit officia repudiandae natus
+                  ipsam nulla itaque odit minima!
+                </p>
+              </li>
+              <li>
+                <div className="flex flex-row justify-between">
+                  <h1 className="text-2xl!">Example</h1>
+                  <span>00/0000 — 00/0000</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Accusantium, nisi! Dolorem ea ab quisquam aut vel, asperiores
+                  at voluptas tempore quam suscipit officia repudiandae natus
+                  ipsam nulla itaque odit minima!
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h1>Education</h1>
+            <ul className="flex flex-col pt-6 gap-4">
+              <li>
+                <div className="flex flex-row justify-between">
+                  <h1 className="text-2xl!">Example</h1>
+                  <span>00/0000 — 00/0000</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Accusantium, nisi! Dolorem ea ab quisquam aut vel, asperiores
+                  at voluptas tempore quam suscipit officia repudiandae natus
+                  ipsam nulla itaque odit minima!
+                </p>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </>
   );
 }
