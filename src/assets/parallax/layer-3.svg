@@ -1,0 +1,5 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns='http://www.w3.org/2000/svg'>
+    <path
+        d="M0 529L129 538L257 514L386 554L514 517L643 549L771 523L900 528L900 601L771 601L643 601L514 601L386 601L257 601L129 601L0 601Z"
+        fill="#0094a7" style="transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);"></path>
+</svg>
