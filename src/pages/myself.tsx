@@ -1,10 +1,21 @@
+import { useScroll, motion, useTransform } from "motion/react";
 import PageHeading from "../components/page-heading";
+import { useRef } from "react";
 
 export default function MyselfPage() {
+  const heroRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"],
+  });
+
+  const heroTextParallax = useTransform(scrollYProgress, [0, 1], [0, -300]);
+
   return (
     <>
       {/* hero */}
       <div
+        ref={heroRef}
         className={`
           select-none
           flex justify-center items-center w-full h-[100vh]
@@ -14,7 +25,10 @@ export default function MyselfPage() {
           animate-bg-pan
         `}
       >
-        <div className="w-[80vw] h-[40vh]">
+        <motion.div
+          style={{ y: heroTextParallax }}
+          className="w-[80vw] h-[40vh]"
+        >
           <h1 className="text-[7rem]! leading-32 font-semibold">
             Caio Hygino
             <br />
@@ -26,7 +40,7 @@ export default function MyselfPage() {
               work in progress!
             </em>
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* content */}
